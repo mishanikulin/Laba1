@@ -22,7 +22,7 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 app = FastAPI()
 
 # Настройка базы данных MySQL
-SQLALCHEMY_DATABASE_URL = "mysql+pymysql://isp_pp_Zobov:1234@77.91.86.135/isp_pp_Zobov"
+SQLALCHEMY_DATABASE_URL = "mysql+pymysql://isp_pp_Nikulin:1234@77.91.86.135/isp_pp_Nikulin"
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
